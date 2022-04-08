@@ -1,11 +1,18 @@
-/* body {
+body {
   background-color: rgb(8, 59, 76);
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color:rgb(250, 200, 86) ;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -16,13 +23,24 @@
   margin: 15px;
   width: 100px;
   height: 100px;
-  background-color: rgb(13, 108, 76);
+  background-color: rgb(0, 134, 89);
   color: white;
-
+  border-radius: 20px;
 }
 
 
 .box-yellow {
   color: black;
-  background-color: yellow;
-} */
+  background-color: rgb(231, 231, 93);
+}
+
+
+.box-orange {
+  color: black;
+  background-color: rgb(244, 197, 112);
+}
+
+.box-red {
+  color: black;
+  background-color: rgb(240, 63, 63);
+}

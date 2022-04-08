@@ -18,26 +18,49 @@ Applica uno stile differente a seconda del valore dell’indice per i multipli d
 
 
 
-/*MILESTONE 1 */
+
+
+const container = document.querySelector(".container");
+
 
 for (let i=1; i <= 100; i++) {
 
+  const boxEl = document.createElement("div");
+  boxEl.className = "box";
+ 
+
 
   if (((i % 3)===0) && ((i % 5)===0)) {
-    console.log("FizzBuzz");
+
+    boxEl.append("FizzBuzz");
+    container.append(boxEl);
+    boxEl.classList.add("box-yellow");
   }
   else if ((i % 5)===0) {
-    console.log("Buzz");
+
+    boxEl.append("Buzz");
+    container.append(boxEl);
+    boxEl.classList.add("box-orange");
+
   }
   else if ((i % 3)===0) {
-    console.log("Fizz");
+
+    boxEl.append("Fizz");
+    container.append(boxEl);
+    boxEl.classList.add("box-red");
+    
   }
   
   else {
-    console.log(i);
+
+    boxEl.append(i);
+    container.append(boxEl);
   }
 }
 
 
 
-const container = document.querySelector(".container");
+
+
+
+
